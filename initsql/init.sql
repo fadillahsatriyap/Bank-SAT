@@ -1,3 +1,4 @@
+create schema  if not exists bank_sat
 create table if not exists data_nasabah
 (
     "nama_lengkap"   varchar(255),
