@@ -17,7 +17,6 @@ import java.time.LocalDate;
 @Getter
 @Setter
 public class Nasabah {
-cd
 
   @Column(name = "nama_lengkap")
   private  String nameLengkap;
