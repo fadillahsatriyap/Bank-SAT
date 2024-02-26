@@ -15,12 +15,8 @@ services:
       - DB_DATABASE=postgres
       - DB_USER=postgres
       - DB_PASS=postgres
-      - REDIS_HOST=localhost
-      - REDIS_PORT=6379
-      - REDIS_PASSWORD=redispass
     depends_on: 
       - postgres
-      - redis
   
   postgres:
     image: postgres:latest
@@ -31,11 +27,3 @@ services:
       - POSTGRES_PASSWORD=postgres
     volumes:
       - ./initsql:/docker-entrypoint-initdb.d
-
-  redis:
-    image: bitnami/redis:latest
-    network_mode: host
-    ports:
-      - "6379:6379"
-    environment:
-      - REDIS_PASSWORD=redispass

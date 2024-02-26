@@ -11,4 +11,4 @@ create table if not exists data_nasabah
 alter table data_nasabah
     owner to postgres;
 
-INSERT INTO public.transactions ("nama_lengkap", "alamat", "tempat_lahir", "tanggal_lahir", "nomor_ktp","nomor_hp") VALUES ('agung', 'cimahi', '1998-08-29', '12372878', '08931839283');
+INSERT INTO bank_sat.data_nasabah ("nama_lengkap", "alamat", "tempat_lahir", "tanggal_lahir", "nomor_ktp","nomor_hp") VALUES ('agung', 'cimahi', '1998-08-29', '12372878', '08931839283');
