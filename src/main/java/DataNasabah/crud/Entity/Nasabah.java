@@ -28,7 +28,7 @@ public class Nasabah {
   private String tempatLahir;
 
   @Column(name = "tanggal_lahir")
-  private Date tanggalLahir;
+  private String tanggalLahir;
 
   @Id
   @Column(name = "nomor_ktp")
